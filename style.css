@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #252432;
+    position: relative;
+}
+
+.nattu1 {
+    background-image: url(\Photograph.jpg);
+    background-color: rgb(129, 21, 21);
+    background-size: cover;
+    border-color: rosybrown;
+    border-style: solid;
+    border-radius: 100px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    height: 100px;
+    width: 100px;
+    z-index: 1;
+}
+
+.frame1 {
+    background: pink;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    height: 100px;
+    position: relative;
+    top: 10px;
+    left: 2px;
+}
+
+
+.h{
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.a{
+    color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+}
+
+.button1 {
+    padding: 5px;
+    background-color: pink;
+    border-color: black;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+
+.button1:hover {
+
+}
+
+.titlepage {
+    color: rosybrown;
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 30px;
+    left: 500px;
+}
+
+.search {
+    position: relative;
+    background-color: whitesmoke;
+    color: black;
+    top: 5px;
+    height: 30px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    
+
+}
+
+.search:hover {
+    cursor: pointer;
+    border-color: black;
+    border-style: dashed;
+    border-radius: 100px;
+
+}
+
+.container {
+    /*background:#252432;*/
+    background-color: rgb(100, 53, 53);
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    height: 1000px;
+    position: relative;
+    top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.container h2{
+    color: white;
+    padding: 10px;
+    position: absolute;
+}
+
+
+
+.box1,.box2,.box3,.box4{
+    background:#252432;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    margin: 10px;
+    z-index: 0;
+}
+
+.box4 img{
+    /*background:#252432;*/
+    color: red;
+    background-color: rgb(100, 53, 53);
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    height: 150px;
+    width: 150px;
+    position: relative;
+
+}
