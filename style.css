@@ -3,50 +3,87 @@
     padding: 0px;
 }
 
+
 body {
     background: #252432;
-    position: relative;
+
 }
 
-.nattu1 {
+@media (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+  }
+
+.frame1 {
+    background: wheat;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    top: 10px;
+    left: 2px;
+}
+
+.logo {
     background-image: url(\Photograph.jpg);
     background-color: rgb(129, 21, 21);
     background-size: cover;
-    border-color: rosybrown;
+    border-color: black;
     border-style: solid;
     border-radius: 100px;
-    position: absolute;
-    top: 20px;
+    position: relative;
+    top: 0px;
     left: 40px;
     height: 100px;
     width: 100px;
     z-index: 1;
 }
 
-.frame1 {
-    background: pink;
-    border-color: black;
-    border-style: solid;
-    border-radius: 10px;
-    height: 100px;
-    position: relative;
-    top: 10px;
-    left: 2px;
+.titlepage {
+    color: black;
+    display: flex;
+    width: 800px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    align-items: left;
+    top: 35px;
+    left: 500px;
+    z-index: 1;
 }
 
 
-.h{
-    color: rgb(255, 255, 255);
+.titlepage h2,a {
+    color: black;
     padding: 5px;
     flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: center;
 }
 
-.a{
-    color: rgb(0, 0, 0);
+
+.titlepage h2:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+    border-style: solid;
+}
+
+
+
+.titlepage a{
+    color: black;
     flex-wrap: wrap;
+    text-decoration: none;
 }
 
-.button1 {
+
+
+/*.button1 {
     padding: 5px;
     background-color: pink;
     border-color: black;
@@ -57,19 +94,11 @@ body {
 
 .button1:hover {
 
-}
+}*/
 
-.titlepage {
-    color: rosybrown;
-    display: flex;
-    width: 800px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: absolute;
-    top: 30px;
-    left: 500px;
-}
+
+
+
 
 .search {
     position: relative;
@@ -86,7 +115,7 @@ body {
 
 .search:hover {
     cursor: pointer;
-    border-color: black;
+    border-color: red;
     border-style: dashed;
     border-radius: 100px;
 
@@ -94,49 +123,172 @@ body {
 
 .container {
     /*background:#252432;*/
-    background-color: rgb(100, 53, 53);
+    background-color: rgb(255, 255, 255);
     border-color: black;
     border-style: solid;
     border-radius: 10px;
-    height: 1000px;
-    position: relative;
-    top: 20px;
+    position: static;
     padding: 20px;
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+   
 }
 
 .container h2{
-    color: white;
+    color: rgb(241, 163, 16);
     padding: 10px;
-    position: absolute;
+    position: relative;
 }
 
+
+
+.container li {
+    color: black;
+    padding: 10px;
+    position: relative;
+    list-style: none;
+    top: 10px;
+    left: 1rem;
+    font-size: 1.2rem;
+    word-spacing: 10%;
+
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: grey;
+  }
+
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: grey;
+  }
+
+
+
+input[type="checkbox"]:checked + label {
+    opacity: 10s;
+  }
 
 
 .box1,.box2,.box3,.box4{
-    background:#252432;
-    border-color: black;
+    background:white;
     border-style: solid;
     border-radius: 10px;
-    height: 200px;
-    width: 200px;
+    border-width: 3px;
+    box-shadow: 0px 0px 10px rgba(0,0,1,10.1);
     position: relative;
+   
     top: 20px;
     margin: 10px;
-    z-index: 0;
+    display: flex;
+    flex: 50%;
+    flex-wrap: wrap;
+    transition: all 0.3s ease;
 }
 
-.box4 img{
-    /*background:#252432;*/
-    color: red;
-    background-color: rgb(100, 53, 53);
-    border-color: black;
+.box1:hover {
+    transform: translateY(-10px); /* Slight lift */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Shadow grows */
+    font-weight: bolder;
+    border-color: #f5deb3;
     border-style: solid;
     border-radius: 10px;
-    height: 150px;
-    width: 150px;
-    position: relative;
+}
+
+.box2:hover {
+    transform: translateY(-10px); /* Slight lift */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Shadow grows */
+    font-weight: bolder;
+    border-color: #f5deb3;
+    border-style: solid;
+    border-radius: 10px;
 
 }
+
+.box3:hover {
+    transform: translateY(-10px); /* Slight lift */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Shadow grows */
+    font-weight: bolder;
+    border-color: #f5deb3;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.box4:hover {
+    transform: translateY(-10px); /* Slight lift */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Shadow grows */
+    font-weight: bolder;
+    border-color: #f5deb3;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+
+.form {
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    box-shadow: 0px 0px 10px rgba(0,0,1,10.1);
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-top: 100px;
+  
+}
+
+.form2 {
+    background-color: rgb(255, 255, 255);
+    border-color: black;
+    box-shadow: 0px 0px 10px rgba(0,0,1,10.1);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 300px;
+    width: 500px;    
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 10px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
